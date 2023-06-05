@@ -1,0 +1,436 @@
+.card {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    background: #03242b;
+    margin: auto;
+    color: white;
+    background: transparent;
+    column-gap: 10px;
+    overflow: visible;
+}
+
+.leftBox {
+    width: 30%;
+    height: 100%;
+    border-radius: 20px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: visible;
+}
+
+.icon {
+    border-radius: 20px;
+    width: 100%;
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+    position: relative;
+    background: transparent;
+}
+
+.iconImg {
+    width: 64%;
+    height: 100%;
+    margin-top: 0;
+    height: auto;
+    background: transparent;
+}
+
+.rightBox {
+    width: 70%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+    background: transparent;
+
+}
+
+.item1 {
+    width: 56.5%;
+    height: 48%;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #03242b;
+}
+
+i {
+    font-size: 15px;
+    background: transparent;
+}
+
+.titles {
+    align-items: center;
+    background: transparent;
+    color: #fff;
+    display: flex;
+    font-size: 17px;
+    font-weight: 400;
+    margin: 6px 13px;
+}
+
+
+.item2 {
+    width: 18%;
+    height: 48%;
+    position: relative;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #03242b;
+}
+
+.location {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 45px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+
+.temp {
+    font-size: 45px;
+    font-weight: 200;
+    color: #fff;
+}
+
+.text {
+    font-size: 17px;
+    font-weight: 300;
+    background: transparent;
+    letter-spacing: 0.8px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+
+.dialHand {
+    width: 27px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: calc(100% - 71px);
+    left: calc(100% - 70px);
+    transform-origin: left;
+}
+
+
+.dialHand1 {
+
+    background-color: #fff;
+    height: 2px;
+    left: 68%;
+    position: absolute;
+    top: 77%;
+    transform-origin: left;
+    width: 13px;
+}
+
+.details {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0 13px;
+}
+
+.footnote {
+    position: absolute;
+    padding-left: 13px;
+    background: transparent;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.precipSubtext {
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 3px 3px;
+}
+
+.windSpeed {
+    position: absolute;
+    top: 45%;
+    left: 33%;
+    background: #03242b;
+    border-radius: 50%;
+    padding: 3px 7px;
+    text-align: center;
+    line-height: 20px;
+}
+
+strong {
+    background: transparent;
+}
+
+.uvScale {
+    width: 120px;
+    height: 3px;
+    background: linear-gradient(to right, green, yellow, orange, red, purple);
+    margin: 8px 13px -6px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+}
+
+.windDial {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    background: transparent;
+}
+
+.windDial img {
+    width: 100px;
+    background: transparent;
+}
+
+.pressureValue {
+    position: absolute;
+    top: 44%;
+    left: 34%;
+    background: #03242b;
+    border-radius: 50%;
+    padding: 2.7px 7px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 13px;
+}
+
+
+.input {
+    background: #03242b;
+    border: none;
+    border-radius: 12px;
+    box-shadow: inset 10px 10px 30px rgba(36, 52, 61, .6);
+    color: #fff;
+    height: 50px;
+    margin: 20px 50%;
+    padding-left: 10px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 300px;
+    margin-right: 314px;
+}
+
+
+
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .input {
+        margin-top: 40px;
+    }
+
+    .text {
+        margin-bottom: 30px;
+    }
+
+    .card {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .leftBox {
+        width: 105%;
+        height: auto;
+    }
+
+    .dialHand {
+        width: 27px;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        top: calc(89% - 71px);
+        left: calc(107% - 70px);
+        transform-origin: left;
+    }
+
+    .windSpeed {
+        position: absolute;
+        top: 39%;
+        left: 33%;
+        background: #24353E;
+        border-radius: 50%;
+        padding: 3px 7px;
+        text-align: center;
+        line-height: 20px;
+    }
+
+    .dialHand1 {
+        background-color: #fff;
+        height: 2px;
+        left: 62%;
+        position: absolute;
+        top: 63%;
+        transform-origin: left;
+        width: 21px;
+    }
+
+    .rightBox {
+        width: 105%;
+        row-gap: 40px;
+    }
+
+    .item1 {
+        width: 419px;
+        height: 164px;
+    }
+
+    .item2 {
+        width: 132px;
+        height: 165px;
+    }
+
+    .uvScale {
+        width: 80%;
+        position: absolute;
+        left: -5%;
+        margin: 2px 20px;
+        bottom: 68px;
+    }
+
+    .dot {
+        top: 90px;
+        position: absolute;
+    }
+
+    .footnote {
+        font-size: 15px;
+        bottom: 9px;
+    }
+}
+
+
+@media(min-width: 0px) and (max-width: 480px) {
+    * {
+        overflow-y: scroll;
+    }
+
+    .input {
+        width: 267px;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .temp {
+        margin-bottom: 15px;
+    }
+
+    .text {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .location {
+        font-size: 31px;
+    }
+
+    .iconImg {
+        width: 140%;
+    }
+
+    td {
+        font-size: 15px;
+    }
+
+    th {
+        font-size: 15px;
+    }
+
+    .leftBox {
+        width: 100%;
+        height: auto;
+    }
+
+    .rightBox {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        row-gap: 20px;
+    }
+
+    .item1 {
+        width: 100%;
+        height: 150px;
+    }
+
+    .item2 {
+        width: 48%;
+        height: 170px;
+        overflow: hidden;
+    }
+
+    .dialHand1 {
+        background-color: #fff;
+        height: 2px;
+        left: 61%;
+        position: absolute;
+        top: 72%;
+        transform-origin: left;
+        width: 15px;
+    }
+
+    .dialHand {
+        top: calc(49%);
+        left: calc(52%);
+    }
+
+    .windSpeed {
+        top: 75px;
+        left: 57px;
+
+    }
+
+    .windDial img {
+        width: 69%;
+    }
+
+    .titles {
+        font-size: 20px;
+    }
+
+    .details {
+        font-weight: 800;
+    }
+
+    .footnote {
+        font-size: 15px;
+        bottom: 8px;
+
+    }
+
+    .pressureValue {
+        top: 81px;
+        left: 60px;
+    }
+
+    .uvScale {
+        width: 80%;
+        position: absolute;
+        left: -4%;
+        margin: 2px 20px;
+        bottom: 73px;
+    }
+
+    .dot {
+        top: 90px;
+        position: absolute;
+    }
+}

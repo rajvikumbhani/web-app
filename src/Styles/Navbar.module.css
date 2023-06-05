@@ -1,0 +1,61 @@
+.container {
+    width: 100%;
+    z-index: 3;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+    z-index: 3;
+    background: transparent;
+    margin-left: 110px;
+}
+
+.date {
+    color: #fff;
+    font-size: 25px;
+    margin-right: 53px;
+    font-weight: 700;
+    z-index: 3;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+    * {
+        overflow: hidden;
+    }
+
+    .logo {
+        font-size: 50px;
+        margin-left: 1px;
+    }
+
+    .date {
+        font-size: 17px;
+        margin-left: 32px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .logo {
+        font-size: 38px;
+        margin-left: 20px;
+    }
+
+    .date {
+        font-size: 15px;
+        margin-left: 79px;
+    }
+}
